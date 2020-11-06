@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
+.info {
+    background-color: #f1faee;
+    height: 30%;
+    align-content: center;
+}
+
+.info .menu a {
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    text-decoration-line: none;
+    font-size: large;
+    text-shadow: 1px qpx 5px 0px #7f7f7f;
+}
+
+.info .menu .list {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-block;
+    list-style: none;
+    padding: 8px;
+}
+
+.info .menu .btn__confirm {
+    color: #f1faee;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: .5px;
+    font-size: x-large;
+    background-color: #e63946;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    transition: .3s ease all;
+}
+
+.info .menu .btn__confirm:focus {
+    border: 3px solid #333333;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.info .menu .btn__confirm:hover {
+    box-shadow: #333333;
+    cursor: default;
+}
