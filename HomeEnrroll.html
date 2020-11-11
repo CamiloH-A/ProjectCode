@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUE HACER</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,8 +19,9 @@
                 <li class="list"> <a href="/Contacto.html">CONTACTO</a></li>
                 <li class="list"> <a href="/Preguntas.html">PREGUNTAS FRECUENTES</a></li>
                 <li class="list"> <a href="/QuienSomos.html">QUIENES SOMOS</a></li>
-                <li class="list"><button class="btn__confirm">Registrarse</button></li>
-                <li class="list"><button class="btn__confirm">Iniciar Sesión</button></li>
+                <li class="list">
+                    <a href="/Home.html"> <button class="btn__confirm-logout">Cerrar Sesión</button></a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -31,6 +34,17 @@
                 <li class="list__2"><a href="#hoy">HOY</a></li>
             </ul>
         </nav>
+    </div>
+    <div class="user__registrado">
+        <i class="material-icons md-48" id="user_registrado">person</i>
+        <h1>USUARIO REGISTRADO</h1>
+    </div>
+    <div class="lista__acciones">
+        <select name="acciones" id="acciones">
+            <option value="Acciones">Acciones</option>
+            <option value="Informacion">Actualizar información</option>
+            <option value="Favoritos">Favoritos</option>
+        </select>
     </div>
     <a id="eventos"></a>
     <div class="eventos">
