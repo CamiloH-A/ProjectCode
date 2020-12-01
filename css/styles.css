@@ -46,8 +46,199 @@ body {
     background-color: #e63946;
     border: none;
     border-radius: 10px;
-    transition: .1s ease all;
+    transition: .3s ease all;
     margin-left: 170%;
+}
+
+.overlay__login {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay__login.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #f1faee;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins' sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    transition: .7s ease all;
+    transform: scale(.6);
+    opacity: 0;
+}
+
+.popup .contenedor__input {
+    opacity: 0;
+}
+
+.popup .contenedor__input input {
+    background-color: #f6faf4;
+}
+
+.popup.active {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.popup.active h3 {
+    animation: entrada__titulo .9s ease .5s forwards;
+}
+
+.popup.active .contenedor__input {
+    animation: entrada__inputs 1s ease 1s forwards;
+}
+
+@keyframes entrada__titulo {
+    from {
+        transform: translateY(-45px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entrada__inputs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.popup .btn__cerrar__popup {
+    font-size: 20px;
+    display: block;
+    text-align: right;
+    color: #e63946;
+    transition: .3s ease all;
+}
+
+.popup .btn__cerrar__popup:hover {
+    color: #333333;
+    font-size: 22px;
+}
+
+.popup h3 {
+    font-family: 'Poppins' sans-serif;
+    text-align: left;
+    color: #333333;
+    font-size: x-large;
+    margin-top: -15px;
+    opacity: 0;
+    font-weight: bolder;
+}
+
+.popup .forgot__pass {
+    color: #a89898;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    text-decoration-line: none;
+    font-size: large;
+    text-shadow: 1px 1px 5px 0px #000000;
+    cursor: pointer;
+}
+
+.popup .forgot__pass:hover {
+    font-size: 19px;
+    color: #272424;
+}
+
+div.popup .formulario__login .contenedor__input input {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 35px;
+    line-height: 35px;
+    font-size: large;
+    text-align: center;
+    border: 1px solid #333333;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.popup .formulario__login .btn__submit__login {
+    padding: 0 20px;
+    margin-top: 10px;
+    height: 35px;
+    font-size: large;
+    font-family: 'Impact', sans-serif;
+    color: #f1faee;
+    letter-spacing: .3px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup .formulario__login .btn__submit__login:hover {
+    box-shadow: 1.5px 1.5px 5px 0px rgba(0, 0, 0, 0.65);
+    font-size: 21px;
+}
+
+.overlay__forgot__pass {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay__forgot__pass.active {
+    visibility: visible;
+}
+
+.popup__pass {
+    background: #f1faee;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins' sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    transition: .7s ease all;
+    transform: scale(.6);
+    opacity: 0;
+}
+
+.popup__pass .contenedor__input {
+    opacity: 0;
+}
+
+.popup__pass .contenedor__input input {
+    background-color: #f6faf4;
+}
+
+.popup__pass .active {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.popup__pass .active h3 {
+    animation: entrada__titulo .9s ease .5s forwards;
+}
+
+.popup__pass .active .contenedor__input {
+    animation: entrada__inputs 1s ease 1s forwards;
 }
 
 .info .menu .btn__confirm-logout {

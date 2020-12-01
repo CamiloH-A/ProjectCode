@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 
 <body>
@@ -18,9 +19,35 @@
                 <li class="list"> <a href="/Preguntas.html">PREGUNTAS FRECUENTES</a></li>
                 <li class="list"> <a href="/QuienSomos.html">QUIENES SOMOS</a></li>
                 <li class="list"><button class="btn__confirm">Registrarse</button></li>
-                <li class="list"><button class="btn__confirm">Iniciar Sesión</button></li>
+                <li class="list" id="btn__login"><button class="btn__confirm" id="btn__login">Iniciar Sesión</button></li>
             </ul>
         </nav>
+    </div>
+    <div class="overlay__login" id="overlay__login">
+        <div class="popup" id="popup">
+            <a href="#" id="btn__cerrar__popup" class="btn__cerrar__popup"><i class="fas fa-times"></i></a>
+            <form action="" class="formulario__login">
+                <div class="contenedor__input">
+                    <h3>Iniciar Sesión</h3>
+                    <input type="text" placeholder="USUARIO">
+                    <input type="password" placeholder="CONTRASEÑA">
+                    <a class="forgot__pass" href="">Olvide mi contraseña</a>
+                </div>
+                <input type="submit" class="btn__submit__login" value="Iniciar Sesión">
+            </form>
+        </div>
+    </div>
+    <div class="overlay__forgot__pass" id="overlay__forgot__pass">
+        <div class="popup__pass" id="popu__pass">
+            <a href="" id="btn__cerrar__popup" class="btn__cerrar__popup"><i class="fas fa-times"></i></a>
+            <form action="" class="formulario__pass">
+                <div class="contenedor__input">
+                    <h3>Se enviará al correo un enlace para restablecer la contraseña.</h3>
+                    <input type="email" placeholder="CORREO">
+                </div>
+                <input type="submit" class="btn__acpetar__pass" value="Aceptar">
+            </form>
+        </div>
     </div>
     <div class="info__2">
         <nav class="menu__2">
@@ -70,6 +97,7 @@
         <h1 class="tittle">HOY</h1>
         <hr class="line">
     </div>
+    <script src="/js/popups.js"></script>
     <div class="fin__hoja">
         <p>CONTACTO@CORREO.COM</p>
     </div>
