@@ -10,6 +10,10 @@ body {
     align-content: center;
 }
 
+.info .menu {
+    display: inline-block;
+}
+
 .info .menu a {
     color: #333333;
     font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
@@ -35,9 +39,13 @@ body {
     font-size: 20.5px;
 }
 
-.info .menu .btn__confirm {
+div.botones {
+    display: inline-block;
+    margin-inline-start: 42%;
+}
+
+.info .botones .btn__confirm {
     color: #f1faee;
-    position: relative;
     width: 150px;
     height: 40px;
     font-family: 'Impact', sans-serif;
@@ -47,10 +55,42 @@ body {
     border: none;
     border-radius: 10px;
     transition: .3s ease all;
-    margin-left: 170%;
+    cursor: pointer;
+}
+
+.info .botones .btn__confirm:hover {
+    box-shadow: 1.5px 1.5px 5px 0px #7f7f7f;
+    text-shadow: 1px 1px 5px rgba(127, 127, 127, 1);
+    font-size: 21.5px;
+}
+
+div.botones2 {
+    display: inline-block;
+    margin-inline-start: 37%;
+}
+
+.info .botones2 .btn__confirm {
+    color: #f1faee;
+    width: 150px;
+    height: 40px;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: .3px;
+    font-size: large;
+    background-color: #e63946;
+    border: none;
+    border-radius: 10px;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.info .botones2 .btn__confirm:hover {
+    box-shadow: 1.5px 1.5px 5px 0px #7f7f7f;
+    text-shadow: 1px 1px 5px rgba(127, 127, 127, 1);
+    font-size: 21.5px;
 }
 
 .overlay__login {
+    z-index: 1;
     background: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
@@ -68,13 +108,14 @@ body {
 }
 
 .popup {
+    z-index: 2;
     background: #f1faee;
     box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins' sans-serif;
     padding: 20px;
     text-align: center;
-    width: 40%;
+    width: 30%;
     transition: .7s ease all;
     transform: scale(.6);
     opacity: 0;
@@ -105,6 +146,7 @@ body {
 /*Inicia Registrarse*/
 
 .overlay__register {
+    z-index: 1;
     background: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
@@ -122,13 +164,14 @@ body {
 }
 
 .popup2 {
+    z-index: 2;
     background: #f1faee;
     box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins' sans-serif;
     padding: 20px;
     text-align: center;
-    width: 40%;
+    width: 20%;
     transition: .7s ease all;
     transform: scale(.6);
     opacity: 0;
@@ -155,22 +198,11 @@ body {
     animation: entrada__inputs 1s ease 1s forwards;
 }
 
-div.popup2 .formulario__register .contenedor__input input {
-    width: 100%;
-    margin-bottom: 30px;
-    height: 35px;
-    line-height: 35px;
-    font-size: large;
-    text-align: center;
-    border: 1px solid #333333;
-    color: #333333;
-    font-family: 'Poppins', sans-serif;
-}
-
-.popup2 .formulario__register .btn__submit__admin {
+.popup2 .formulario__register .contenedor__input .btn__submit__admin {
     padding: 0 20px;
     margin-top: 10px;
     height: 35px;
+    width: 70%;
     font-size: large;
     font-family: 'Impact', sans-serif;
     color: #f1faee;
@@ -182,10 +214,11 @@ div.popup2 .formulario__register .contenedor__input input {
     transition: .3s ease all;
 }
 
-.popup2 .formulario__register .btn__submit__ureg {
+.popup2 .formulario__register .contenedor__input .btn__submit__ureg {
     padding: 0 20px;
     margin-top: 10px;
     height: 35px;
+    width: 70%;
     font-size: large;
     font-family: 'Impact', sans-serif;
     color: #f1faee;
@@ -197,10 +230,11 @@ div.popup2 .formulario__register .contenedor__input input {
     transition: .3s ease all;
 }
 
-.popup2 .formulario__register .btn__submit__uesp {
+.popup2 .formulario__register .contenedor__input .btn__submit__uesp {
     padding: 0 20px;
     margin-top: 10px;
     height: 35px;
+    width: 70%;
     font-size: large;
     font-family: 'Impact', sans-serif;
     color: #f1faee;
@@ -259,6 +293,19 @@ div.popup2 .formulario__register .contenedor__input input {
 }
 
 .popup .btn__cerrar__popup:hover {
+    color: #333333;
+    font-size: 22px;
+}
+
+.popup2 .btn__cerrar__popup2 {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    color: #e63946;
+    transition: .3s ease all;
+}
+
+.popup2 .btn__cerrar__popup2:hover {
     color: #333333;
     font-size: 22px;
 }
@@ -492,6 +539,7 @@ div#otros {
 }
 
 p.texto {
+    z-index: 0;
     font-size: x-large;
     text-align: left;
     margin-top: -190px;
