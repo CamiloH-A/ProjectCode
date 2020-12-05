@@ -101,6 +101,135 @@ body {
     animation: entrada__inputs 1s ease 1s forwards;
 }
 
+
+/*Inicia Registrarse*/
+
+.overlay__register {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay__register.active {
+    visibility: visible;
+}
+
+.popup2 {
+    background: #f1faee;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins' sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    transition: .7s ease all;
+    transform: scale(.6);
+    opacity: 0;
+}
+
+.popup2 .contenedor__input {
+    opacity: 0;
+}
+
+.popup2 .contenedor__input input {
+    background-color: #393b37;
+}
+
+.popup2.active {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.popup2.active h3 {
+    animation: entrada__titulo .9s ease .5s forwards;
+}
+
+.popup2.active .contenedor__input {
+    animation: entrada__inputs 1s ease 1s forwards;
+}
+
+div.popup2 .formulario__register .contenedor__input input {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 35px;
+    line-height: 35px;
+    font-size: large;
+    text-align: center;
+    border: 1px solid #333333;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.popup2 .formulario__register .btn__submit__admin {
+    padding: 0 20px;
+    margin-top: 10px;
+    height: 35px;
+    font-size: large;
+    font-family: 'Impact', sans-serif;
+    color: #f1faee;
+    letter-spacing: .3px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup2 .formulario__register .btn__submit__ureg {
+    padding: 0 20px;
+    margin-top: 10px;
+    height: 35px;
+    font-size: large;
+    font-family: 'Impact', sans-serif;
+    color: #f1faee;
+    letter-spacing: .3px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup2 .formulario__register .btn__submit__uesp {
+    padding: 0 20px;
+    margin-top: 10px;
+    height: 35px;
+    font-size: large;
+    font-family: 'Impact', sans-serif;
+    color: #f1faee;
+    letter-spacing: .3px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup2 .formulario__register .btn__submit__admin:hover {
+    box-shadow: 1.5px 1.5px 5px 0px rgba(0, 0, 0, 0.65);
+    font-size: 21px;
+}
+
+.popup2 .formulario__register .btn__submit__ureg:hover {
+    box-shadow: 1.5px 1.5px 5px 0px rgba(0, 0, 0, 0.65);
+    font-size: 21px;
+}
+
+.popup2 .formulario__register .btn__submit__uesp:hover {
+    box-shadow: 1.5px 1.5px 5px 0px rgba(0, 0, 0, 0.65);
+    font-size: 21px;
+}
+
+
+/*Termina Registrarse*/
+
 @keyframes entrada__titulo {
     from {
         transform: translateY(-45px);
@@ -135,6 +264,16 @@ body {
 }
 
 .popup h3 {
+    font-family: 'Poppins' sans-serif;
+    text-align: left;
+    color: #333333;
+    font-size: x-large;
+    margin-top: -15px;
+    opacity: 0;
+    font-weight: bolder;
+}
+
+.popup h4 {
     font-family: 'Poppins' sans-serif;
     text-align: left;
     color: #333333;

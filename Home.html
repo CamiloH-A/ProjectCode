@@ -18,11 +18,13 @@
                 <li class="list"> <a href="/Contacto.html">CONTACTO</a></li>
                 <li class="list"> <a href="/Preguntas.html">PREGUNTAS FRECUENTES</a></li>
                 <li class="list"> <a href="/QuienSomos.html">QUIENES SOMOS</a></li>
-                <li class="list"><button class="btn__confirm">Registrarse</button></li>
                 <li class="list" id="btn__login"><button class="btn__confirm" id="btn__login">Iniciar Sesión</button></li>
+                <li class="list" id="btn__r"><button class="btn__confirm" id="btn__r">Registrarse</button></li>
+
             </ul>
         </nav>
     </div>
+
     <div class="overlay__login" id="overlay__login">
         <div class="popup" id="popup">
             <a href="#" id="btn__cerrar__popup" class="btn__cerrar__popup"><i class="fas fa-times"></i></a>
@@ -31,14 +33,36 @@
                     <h3>Iniciar Sesión</h3>
                     <input type="text" placeholder="USUARIO">
                     <input type="password" placeholder="CONTRASEÑA">
-                    <a class="forgot__pass" href="">Olvide mi contraseña</a>
+                    <!--<button class="forgot__pass" id="forgot_pass" value="Olvidé mi contraseña">-->
+                    <a class="forgot__pass" id="forgot__pass" href="">Olvide mi contraseña</a>
                 </div>
                 <input type="submit" class="btn__submit__login" value="Iniciar Sesión">
             </form>
         </div>
     </div>
+    <!-- Inicio Registrarse-->
+    <div class="overlay__register" id="overlay__register">
+        <div class="popup2" id="popup2">
+            <a href="#" id="btn__cerrar__popup2" class="btn__cerrar__popup2"><i class="fas fa-times"></i></a>
+            <form action="" class="formulario__register">
+                <div class="contenedor__input">
+                    <h3>Selecciona el tipo de usuario que deseas ser.</h3>
+                    <div class="popupa" id="popupa">
+                        <input type="submit" class="btn__submit__admin" value="Administrador">
+                    </div>
+                    <div class="popupr" id="popupr">
+                        <input type="submit" class="btn__submit__ureg" value="Usuario Registrado">
+                    </div>
+                    <div class="popupe" id="popupe">
+                        <input type="submit" class="btn__submit__uesp" value="Usuario Especial">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Fin Registrarse-->
     <div class="overlay__forgot__pass" id="overlay__forgot__pass">
-        <div class="popup__pass" id="popu__pass">
+        <div class="popup__pass" id="popup__pass">
             <a href="" id="btn__cerrar__popup" class="btn__cerrar__popup"><i class="fas fa-times"></i></a>
             <form action="" class="formulario__pass">
                 <div class="contenedor__input">
