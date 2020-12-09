@@ -34,10 +34,23 @@
                     <h3>Iniciar Sesión</h3>
                     <input type="text" placeholder="USUARIO">
                     <input type="password" placeholder="CONTRASEÑA">
-                    <!--<button class="forgot__pass" id="forgot_pass" value="Olvidé mi contraseña">-->
-                    <a class="forgot__pass" id="forgot__pass" href="">Olvide mi contraseña</a>
+                    <a class="forgot__pass" id="forgot__pass">Olvide mi contraseña</a>
                 </div>
                 <input type="submit" class="btn__submit__login" value="Iniciar Sesión">
+            </form>
+        </div>
+    </div>
+    <!--FORMULARIO OLVIDE MI CONTRASEÑA-->
+    <div class="overlay__pass" id="overlay__pass">
+        <div class="popup__pass" id="popup__pass">
+            <a href="#" id="BtnCerrarPopupPass" class="BtnCerrarPopupPass"><i class="fas fa-times"></i></a>
+            <form action="" class="formulario__pass" id="formulario__pass">
+                <div class="contenedor__pass" id="contenedor__pass">
+                    <h4>Se enviara un enlace al correo para restablecer su contraseña</h4>
+                    <input type="text" placeholder="USUARIO">
+                    <input type="email" placeholder="CORREO">
+                </div>
+                <input type="submit" class="BtnSubmitPass" id="BtnSubmitPass" value="Enviar">
             </form>
         </div>
     </div>
@@ -62,18 +75,6 @@
         </div>
     </div>
     <!-- Fin Registrarse-->
-    <div class="overlay__forgot__pass" id="overlay__forgot__pass">
-        <div class="popup__pass" id="popup__pass">
-            <a href="" id="btn__cerrar__popup" class="btn__cerrar__popup"><i class="fas fa-times"></i></a>
-            <form action="" class="formulario__pass">
-                <div class="contenedor__input">
-                    <h3>Se enviará al correo un enlace para restablecer la contraseña.</h3>
-                    <input type="email" placeholder="CORREO">
-                </div>
-                <input type="submit" class="btn__acpetar__pass" value="Aceptar">
-            </form>
-        </div>
-    </div>
     <div class="info__2">
         <nav class="menu__2">
             <ul>
