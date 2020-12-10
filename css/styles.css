@@ -505,6 +505,146 @@ div.popup__pass .formulario__pass .contenedor__pass input {
 }
 
 
+/*FORMULARIO REGISTRO ADMINISTRADOR*/
+
+.overlay__registro__admin {
+    z-index: 1;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay__registro__admin.active {
+    visibility: visible;
+}
+
+.popup__admin {
+    z-index: 2;
+    background: #393b37;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins' sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    transition: .7s ease all;
+    transform: scale(.4);
+    opacity: 0;
+}
+
+.popup__admin .contenedor__admin {
+    opacity: 0;
+}
+
+.popup__admin .contenedor__admin input {
+    background-color: #f1faee;
+}
+
+.popup__admin .contenedor__admin textarea {
+    background-color: #f1faee;
+    margin-bottom: 20px;
+}
+
+.popup__admin.active {
+    opacity: 1;
+    transform: scale(.76);
+}
+
+.popup__admin.active h3 {
+    animation: entrada__titulo .9s ease .1s forwards;
+}
+
+.popup__admin.active h4 {
+    animation: entrada__titulo .9s ease .1s forwards;
+}
+
+.popup__admin.active .contenedor__admin {
+    animation: entrada__inputs 1s ease 1s forwards;
+}
+
+.popup__admin .BtnCerrarPopupAdmin {
+    font-size: 30px;
+    display: block;
+    text-align: right;
+    color: #f1faee;
+    transition: .3s ease all;
+}
+
+.popup__admin .BtnCerrarPopupAdmin:hover {
+    color: #e63946;
+    font-size: 32px;
+}
+
+.popup__admin h3 {
+    font-family: 'Poppins' sans-serif;
+    text-align: left;
+    color: #f1faee;
+    font-size: x-large;
+    opacity: 0;
+    font-weight: bolder;
+}
+
+.popup__admin h4 {
+    font-family: 'Poppins' sans-serif;
+    text-align: justify;
+    color: #f1faee;
+    font-size: large;
+    margin-top: 20px;
+    opacity: 0;
+    font-weight: bolder;
+}
+
+.popup__admin label {
+    font-family: 'Poppins' sans-serif;
+    text-align: justify;
+    color: #f1faee;
+    font-size: large;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.popup__admin .formulario__admin .contenedor__admin input {
+    width: 40%;
+    margin-bottom: 30px;
+    height: 35px;
+    line-height: 35px;
+    font-size: large;
+    text-align: center;
+    border: 1px solid #333333;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.popup__admin .formulario__admin .BtnSubmitAdmin {
+    padding: 0 20px;
+    margin-top: 10px;
+    height: 40px;
+    width: 30%;
+    font-size: xx-large;
+    font-family: 'Impact', sans-serif;
+    color: #f1faee;
+    letter-spacing: .3px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup__admin .formulario__admin .BtnSubmitAdmin:hover {
+    box-shadow: 1.5px 1.5px 5px 0px rgba(0, 0, 0, 0.65);
+    font-size: 35px;
+}
+
+
 /*FIN FORMULARIOS*/
 
 .info .menu .btn__confirm-logout {

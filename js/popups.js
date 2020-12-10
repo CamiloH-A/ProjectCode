@@ -13,7 +13,12 @@ var btnAbrirPopup = document.getElementById('btn__login'),
     overlay__pass = document.getElementById('overlay__pass'),
     popup__pass = document.getElementById('popup__pass'),
     BtnCerrarPopupPass = document.getElementById('BtnCerrarPopupPass'),
-    BtnSubmitPass = document.getElementById('BtnSubmitPass');
+    BtnSubmitPass = document.getElementById('BtnSubmitPass'),
+    BtnAbrirPopupAdmin = document.getElementById('BtnPopupAdmin'),
+    overlay__admin = document.getElementById('overlay__registro__admin'),
+    popup__admin = document.getElementById('popup__admin'),
+    BtnCerrarPopupAdmin = document.getElementById('BtnCerrarPopupAdmin'),
+    BtnSubmitAdmin = document.getElementById('BtnSubmitAdmin');
 
 btnAbrirPopup.addEventListener('click', function() {
     overlay__login.classList.add('active');
@@ -51,3 +56,20 @@ BtnSubmitPass.addEventListener('click', function() {
     overlay__pass.classList.remove('active');
     popup__pass.classList.remove('active');
 });
+
+BtnAbrirPopupAdmin.addEventListener('click', function() {
+    overlay__admin.classList.add('active');
+    popup__admin.classList.add('active');
+    overlay__register.classList.remove('active');
+    popup2.classList.remove('active');
+})
+
+BtnCerrarPopupAdmin.addEventListener('click', function() {
+    overlay__admin.classList.remove('active');
+    popup__admin.classList.remove('active');
+})
+
+BtnSubmitAdmin.addEventListener('click', function() {
+    overlay__admin.classList.remove('active');
+    popup__admin.classList.remove('active');
+})
