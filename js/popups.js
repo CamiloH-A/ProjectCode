@@ -14,8 +14,8 @@ var btnAbrirPopup = document.getElementById('btn__login'),
     popup__pass = document.getElementById('popup__pass'),
     BtnCerrarPopupPass = document.getElementById('BtnCerrarPopupPass'),
     BtnSubmitPass = document.getElementById('BtnSubmitPass'),
-    BtnAbrirPopupAdmin = document.getElementById('BtnPopupAdmin'),
-    overlay__admin = document.getElementById('overlay__registro__admin'),
+    BtnAbrirPopupAdmin = document.getElementById('btn__submit__admin'),
+    overlay__registro__admin = document.getElementById('overlay__registro__admin'),
     popup__admin = document.getElementById('popup__admin'),
     BtnCerrarPopupAdmin = document.getElementById('BtnCerrarPopupAdmin'),
     BtnSubmitAdmin = document.getElementById('BtnSubmitAdmin');
@@ -58,18 +58,13 @@ BtnSubmitPass.addEventListener('click', function() {
 });
 
 BtnAbrirPopupAdmin.addEventListener('click', function() {
-    overlay__admin.classList.add('active');
-    popup__admin.classList.add('active');
     overlay__register.classList.remove('active');
     popup2.classList.remove('active');
-})
+    overlay__registro__admin.classList.add('active');
+    popup__admin.classList.add('active');
+});
 
 BtnCerrarPopupAdmin.addEventListener('click', function() {
-    overlay__admin.classList.remove('active');
+    overlay__registro__admin.classList.remove('active');
     popup__admin.classList.remove('active');
-})
-
-BtnSubmitAdmin.addEventListener('click', function() {
-    overlay__admin.classList.remove('active');
-    popup__admin.classList.remove('active');
-})
+});
