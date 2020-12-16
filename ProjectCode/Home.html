@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUE HACER</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+
+<body>
+    <div class="info" id="info">
+        <nav class="menu" class="menu">
+            <ul>
+                <li class="list"> <a href="/Contacto.html">CONTACTO</a></li>
+                <li class="list"> <a href="/Preguntas.html">PREGUNTAS FRECUENTES</a></li>
+                <li class="list"> <a href="/QuienSomos.html">QUIENES SOMOS</a></li>
+            </ul>
+        </nav>
+        <div class="botones">
+            <input type="submit" id="btn__login" class="btn__confirm" value="Iniciar Sesión">
+            <input type="submit" id="btn__r" class="btn__confirm" value="Registrarse">
+        </div>
+    </div>
+    <!--FORMULARIO LOGIN-->
+    <div class="overlay__login" id="overlay__login">
+        <div class="popup" id="popup">
+            <a href="#" id="btn__cerrar__popup" class="btn__cerrar__popup"><i class="fas fa-times"></i></a>
+            <form action="" class="formulario__login">
+                <div class="contenedor__input">
+                    <h3>Iniciar Sesión</h3>
+                    <input type="text" placeholder="USUARIO">
+                    <input type="password" placeholder="CONTRASEÑA">
+                    <a class="forgot__pass" id="forgot__pass">Olvide mi contraseña</a>
+                </div>
+                <input type="submit" class="btn__submit__login" value="Iniciar Sesión">
+            </form>
+        </div>
+    </div>
+    <!--FORMULARIO OLVIDE MI CONTRASEÑA-->
+    <div class="overlay__pass" id="overlay__pass">
+        <div class="popup__pass" id="popup__pass">
+            <a href="#" id="BtnCerrarPopupPass" class="BtnCerrarPopupPass"><i class="fas fa-times"></i></a>
+            <form action="" class="formulario__pass" id="formulario__pass">
+                <div class="contenedor__pass" id="contenedor__pass">
+                    <h4>Se enviara un enlace al correo para restablecer su contraseña</h4>
+                    <input type="text" placeholder="USUARIO">
+                    <input type="email" placeholder="CORREO">
+                </div>
+                <input type="submit" class="BtnSubmitPass" id="BtnSubmitPass" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <!-- Inicio Registrarse-->
+    <div class="overlay__register" id="overlay__register">
+        <div class="popup2" id="popup2">
+            <a href="#" id="btn__cerrar__popup2" class="btn__cerrar__popup2"><i class="fas fa-times"></i></a>
+            <form action="" class="formulario__register">
+                <div class="contenedor__input">
+                    <h3>Selecciona el tipo de usuario que deseas ser.</h3>
+                    <div class="popupa" id="popupa">
+                        <a href="/RegistroAdmin.html" class="BtnSubmit" id="BtnSubmitAdmin">Administrador</a><br><br>
+                    </div>
+                    <div class="popupr" id="popupr">
+                        <a href="/RegistroUser.html" class="BtnSubmit2" id="BtnSumbitUreg">Usuario Registrado</a><br><br>
+                    </div>
+                    <div class="popupe" id="popupe">
+                        <a href="/RegistroEspecial.html" class="BtnSubmit" id="BtnSubmitUesp">Usuario Especial</a><br><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="info__2">
+        <nav class="menu__2">
+            <ul>
+                <li class="list__2"><a href="#eventos">EVENTOS</a></li>
+                <li class="list__2"><a href="#noticias">NOTICIAS</a></li>
+                <li class="list__2"><a href="#semana">ESTA SEMANA</a></li>
+                <li class="list__2"><a href="#hoy">HOY</a></li>
+            </ul>
+        </nav>
+    </div>
+    <a id="eventos"></a>
+    <div class="eventos">
+        <h1 class="tittle">EVENTOS</h1>
+        <hr class="line">
+        <header class="header">
+            <div class="contenedor" id="deportes">
+                <img src="/images/Sports.png" alt="">
+                <p class="texto">Deportes</p>
+            </div>
+            <div class="contenedor" id="danza">
+                <img src="/images/Dance.png" alt="">
+                <p class="texto">Danza</p>
+            </div>
+            <div class="contenedor" id="musica">
+                <img src="/images/musica.png" alt="">
+                <p class="texto">Música</p>
+            </div>
+            <div class="contenedor" id="otros">
+                <img src="/images/Otros.png" alt="">
+                <p class="texto">Otros</p>
+            </div>
+        </header>
+    </div>
+    <a id="noticias"></a>
+    <div class="noticias">
+        <h1 class="tittle">NOTICIAS</h1>
+        <hr class="line">
+    </div>
+    <a id="semana"></a>
+    <div class="semana">
+        <h1 class="tittle">ESTA SEMANA</h1>
+        <hr class="line">
+    </div>
+    <a id="hoy"></a>
+    <div class="hoy">
+        <h1 class="tittle">HOY</h1>
+        <hr class="line">
+    </div>
+    <script src="/js/popups.js"></script>
+    <div class="fin__hoja">
+        <p>CONTACTO@CORREO.COM</p>
+    </div>
+</body>
+
+</html>
